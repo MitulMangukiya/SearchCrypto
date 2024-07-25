@@ -1,0 +1,53 @@
+.spin{
+    display: grid;
+    place-self: center;
+    min-height: 80vh;
+}
+.spinner{
+    width: 65px;
+    height: 65px;
+    place-self: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: roll 5s infinite;
+}
+@keyframes roll{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.coin{
+    padding: 0px 20px;
+}
+.coin-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0px;
+}
+.coin-name img{
+    width: 100px;
+}
+.coin-name p b{
+    font-size: 30px;
+}
+.coin-chart{
+    margin: 30px 0px;
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+}
+.coin-info{
+    max-width: 600px;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+}
+.coin-info ul{
+    list-style: none;
+    display: flex;
+    padding: 12px 0px;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
